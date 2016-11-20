@@ -1,0 +1,22 @@
+mixin article()
+	.article
+		.cover
+			img(src='../images/cover.jpg')
+		.desc
+			h3 我一个世界美食爱好者为什么如此钟情印度菜
+			.info
+				img(src='../images/avatar.png')
+				a(href='#') 奇异博士
+				span 刚刚
+			.summary
+				span 9月3日，也就是我的欧盟签证到期的最后一天，我在希腊雅典市中心的一条街上探头探脑，心里琢磨着：上帝也太不公平了，把我想吃的中餐、肯德基和印度菜放在一条街上，对于天生有选择障碍症的我，无异于是一种折磨。 （本文授权自作者：喜喜 首发)
+					a(href='#') [查看详情]
+
+mixin articles()
+	.articles
+		+article
+		+article
+		+article
+		+article
+		+article
+		+article
