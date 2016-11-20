@@ -1,5 +1,6 @@
 (function( $ ){
 	$( function(){
-		$( document ).trigger( "enhance" );
+		$('.carousel').css('visibility', 'visible');
+		$( document ).trigger( "enhance");
 	});
 }( jQuery ));
