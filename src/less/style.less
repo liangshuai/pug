@@ -1,25 +1,24 @@
-@font-face{
-	font-family: 'Some Static Font';
-	src: url('../fonts/some_static_font.woff2') format('woff2'),
-		 url('../fonts/some_static_font.woff') format('woff');
+@import "normalize.less";
+@import "common.less";
+@import "nav.less";
+@import "btn.less";
+@import "dropdown.less";
+
+body{
+	background-color: #eef2f4;
 }
 
-@font-sans: "Helvetica Neue", "Helvetica", Verdana, sans-serif;
-@font-some: "Some Static Font", serif;
-
-
-body {
-	font-family: @font-sans;
+.header{
+    height: 48px;
+    top: 0;
+    background-color: white;
+    z-index: 50;
+    padding: 13px 0 14px 0;
+    white-space: nowrap;
+    border-bottom: 1px solid #f1f1f1;
+    box-shadow: 0 2px 6px rgba(0,0,0, 0.08);
 }
-
-.text-uppercase {
-	text-transform: uppercase;
-}
-
-.text-styled {
-	font-family: @font-some;
-}
-
-h1 {
-	.text-uppercase;
+.container {
+	width: 1024px;
+	margin: 0 auto;
 }

@@ -1,0 +1,25 @@
+mixin nav(type,items,active)
+	.header.navbar
+		.container
+			.right
+				input(name='search')
+				a.btn.default 我要提问
+				a.language(href="javascript:void(0)", data-jq-dropdown='#jq-dropdown-language') 中文
+				a.login(href="javascript:void(0)") 登录
+			.logo.left
+				img(src='./images/logo.png')
+			ul.nav.left
+				li.item.active
+					a(href='index.html') 首页
+				li.item
+					a(href='news.html') 资讯
+				li.item
+					a(href='forum.html') 论坛
+				li.item
+					a(href="about.html") 关于
+	#jq-dropdown-language.jq-dropdown.jq-dropdown-tip.jq-dropdown-anchor-right
+		ul.jq-dropdown-menu
+			li
+				a(href='＃') 中文
+			li
+				a(href='＃') English
