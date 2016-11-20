@@ -21,4 +21,43 @@ body{
 .container {
 	width: 1024px;
 	margin: 0 auto;
+    &.content{
+        margin-top: 20px;
+    }
+    >.inner{
+        width: 720px;
+    }
+    >.sidebar{
+        width: 280px;
+    }
 }
+.carousel{
+    height: 300px;
+    .carousel-nav{
+        .prev, .next{
+            position: absolute;
+            top: 50%;
+            display: inline-block;
+            width: 50px;
+            height: 48px;
+            z-index: 99;
+            opacity: 0.5;
+            text-indent: -99999px;
+            &:hover{
+                opacity: 1;
+            }
+        }
+
+        .prev{
+            left: 10px;
+            background: url(../images/left.png);
+        }
+        .next{
+            right: 10px;
+            background: url(../images/right.png);
+
+        }
+    }
+}
+
+

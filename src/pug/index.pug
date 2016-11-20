@@ -1,8 +1,27 @@
 extend ./templates/layout.pug
 
+append style
+	link(href='./css/responsive-carousel.css', rel='stylesheet')
+	link(href='./css/responsive-carousel.slide.css', rel='stylesheet')
+append script
+	script(src='./js/responsive-carousel.js')
+	script(src='./js/responsive-carousel.keybd.js')
+	script(src='./js/responsive-carousel.touch.js')
+	script(src='./js/responsive-carousel.drag.js')
+	script(src='./js/responsive-carousel.autoinit.js')
+	script(src='./js/responsive-carousel.autoplay.js')
+	script(src='./js/index.js')
 block content
-  span hahahaaa
-  p nihao
+	.container.content
+		+sidebar
+		.inner
+			.carousel(data-transition='slide' data-autoplay data-interval='2000')
+				div
+					img(src='./images/slide01.jpg')
+				div
+					img(src='./images/slide02.jpg')
+				div
+					img(src='./images/slide03.jpg')
 
 
 
