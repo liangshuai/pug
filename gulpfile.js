@@ -8,6 +8,7 @@ const imagemin = require('gulp-imagemin');
 const uglify = require('gulp-uglify');
 const rename = require('gulp-rename');
 const connect = require('gulp-connect');
+const zip = require('gulp-zip');
 
 
 // Source folder configuration
@@ -79,6 +80,7 @@ gulp.task('pug', () =>
 		.pipe(connect.reload())
 );
 
+
 gulp.task('imagemin', () =>
     gulp.src(SRC_FILES.images)
         .pipe(imagemin())
@@ -92,6 +94,12 @@ gulp.task('copyAssets', () =>
 		.pipe(connect.reload())
 );
 
+gulp.task('zip', () =>
+    gulp.src('src/*')
+        .pipe(zip('dist.zip'))
+        .pipe(gulp.dest(PUB_DIR.root))
+);
+
 gulp.task('webserver', () =>
 	connect.server({
     	root: 'public',
@@ -100,6 +108,6 @@ gulp.task('webserver', () =>
 		host: 'localhost'
 	})
 );
-
-gulp.task('default', ['less', 'pug', 'imagemin', 'jsmin', 'copyAssets']);
-gulp.task('server', ['default', 'webserver', 'watch']);
+gulp.task('default', ['less', 'pug', 'imagemin', 'jsmin', 'copyAssets', 'zip']);
+gulp.task('dev', ['less', 'pug', 'imagemin', 'jsmin', 'copyAssets']);
+gulp.task('server', ['dev', 'webserver', 'watch']);

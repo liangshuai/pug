@@ -23,6 +23,7 @@
     "gulp-less": "~3.2",
     "gulp-pug": "~3.1",
     "gulp-rename": "~1.2",
-    "gulp-uglify": "~2.0"
+    "gulp-uglify": "~2.0",
+    "gulp-zip": "^3.2.0"
   }
 }
