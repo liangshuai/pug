@@ -95,7 +95,7 @@ gulp.task('copyAssets', () =>
 );
 
 gulp.task('zip', () =>
-    gulp.src('src/*')
+    gulp.src('public/*')
         .pipe(zip('dist.zip'))
         .pipe(gulp.dest(PUB_DIR.root))
 );
