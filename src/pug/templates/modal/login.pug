@@ -1,0 +1,25 @@
+mixin login()
+	#LoginModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='LoginModalLabel', aria-hidden='true')
+		.modal-dialog
+			.modal-content
+				.modal-header
+					button.close(type='button', data-dismiss='modal')
+						span(aria-hidden='true') &times;
+						span.sr-only Close
+				.modal-body
+					div
+						.pull-right
+							| 还没有账号? 
+							a(href='') 立即注册
+						h4 登录
+					form.bottom(role='form')
+						.form-group
+							input#exampleInputEmail1.form-control(type='email', placeholder='请输入用户名/邮箱')
+						.form-group
+							input#exampleInputPassword1.form-control(type='password', placeholder='请输入密码')
+						.checkbox
+							label
+								input(type='checkbox')
+								|  Check me out
+						button.btn.btn-default(type='submit') Submit
+
