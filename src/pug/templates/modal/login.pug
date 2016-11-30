@@ -14,12 +14,22 @@ mixin login()
 						h4 登录
 					form.bottom(role='form')
 						.form-group
-							input#exampleInputEmail1.form-control(type='email', placeholder='请输入用户名/邮箱')
+							input#username.form-control(type='email', placeholder='请输入用户名/邮箱')
 						.form-group
-							input#exampleInputPassword1.form-control(type='password', placeholder='请输入密码')
+							input#password.form-control(type='password', placeholder='请输入密码')
+						.form-group
+							.row
+								.col-md-8
+									input#captcha.form-control(type='text', placeholder='请输入验证码')
+								.col-md-4
 						.checkbox
 							label
 								input(type='checkbox')
-								|  Check me out
-						button.btn.btn-default(type='submit') Submit
+								|  保持登录
+						.form-group
+							button.btn.btn-primary.btn-lg.btn-block(type="button") 登录
+					div
+						.pull-right
+							a(href='') 忘记密码?
+						span.hint 如果登录出现异常，请清除浏览器缓存后再尝试。
 
