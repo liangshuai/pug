@@ -2,6 +2,7 @@
 @import "common.less";
 @import "nav.less";
 @import "btn.less";
+@import "tag.less";
 @import "dropdown.less";
 @import "register.less";
 
@@ -9,6 +10,9 @@ body{
 	background-color: #eef2f4;
 }
 
+.bg-white{
+    background-color: #FFF;
+}
 .nav.navbar-right .user{
     border-left: 1px solid #e6e6e6;
     padding: 0px 16px;
@@ -19,7 +23,7 @@ body{
         padding: 0;
     }
 }
-.container.content {
+.container{
     &.content{
         margin-top: 20px;
         padding: 0;
@@ -196,6 +200,21 @@ body{
         h4{
             margin-bottom: 48px;
         }
+    }
+}
+#fulfill{
+    &.content{
+        min-height: 600px;
+    }
+    .inner{
+        text-align: center;
+        margin-top: 150px;
+    }
+    .action{
+        margin: 300px 0 30px;
+    }
+    .finish{
+        margin-top: 30px;
     }
 }
 

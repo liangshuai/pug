@@ -1,0 +1,38 @@
+extend ./templates/layout.pug
+
+block content
+	.container.content.bg-white.text-center#fulfill
+			h3 选择你感兴趣的标签
+			.tag-list
+				.text-center
+					a.tag.purple 3D打印
+					a.tag.purple.selected 新能源
+				.text-center
+					a.tag.purple 纳米分子
+					a.tag.purple 科技人物
+					a.tag.purple 太阳能
+				.text-center
+					a.tag.yellow 人工智能
+					a.tag.yellow.selected 航空航天
+					a.tag.yellow.selected 计算机科学
+					a.tag.yellow 新材料
+				.text-center
+					a.tag.green 生物科技
+					a.tag.green 高分子
+					a.tag.green 医疗科技
+					a.tag.green.selected 未来教育
+					a.tag.green 虚拟科技
+				.text-center
+					a.tag.blue 航空航天
+					a.tag.blue 新材料
+					a.tag.blue.selected 科技人物
+					a.tag.blue 轻量化
+				.text-center
+					a.tag.red 机器人
+					a.tag.red.selected 飞行器
+					a.tag.red 新能源
+				.text-center
+					a.tag.red 大数据
+					a.tag.red 深度学习
+			div.finish
+				a.btn.btn-primary.btn-lg.large(href="favor.html") 完成
