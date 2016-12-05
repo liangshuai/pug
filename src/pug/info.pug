@@ -1,0 +1,58 @@
+extend ./templates/layout.pug
+
+block content
+	.container.content.bg-white
+		.inner.detail-info
+			div
+				form.form-horizontal(role='form')
+					.form-group
+						label.col-sm-2.control-label 账号昵称:
+						.col-sm-10
+							input#nickname.form-control(type='email', placeholder='账号昵称')
+					.form-group
+						label.col-sm-2.control-label(for='city') 所在城市:
+						.col-sm-10
+							input#city.form-control(type='text', placeholder='所在城市')
+					.form-group
+						label.col-sm-2.control-label(for='city') 性  别:
+						.col-sm-10
+							.radio
+								label
+									input#gender(type='radio', name='gender')
+									|  男
+								label
+									input#gender(type='radio', name='gender')
+									|  女
+								label
+									input#gender(type='radio', name='gender')
+									|  保密
+					.form-group
+						label.col-sm-2.control-label(for='job') 职 业:
+						.col-sm-10
+							input#job.form-control(type='text', placeholder='职业')
+					.form-group
+						label.col-sm-2.control-label(for='personpage') 个人主页:
+						.col-sm-10
+							input#personpage.form-control(type='text', placeholder='http://')
+					.form-group
+						label.col-sm-2.control-label(for='resume') 关于自己:
+						.col-sm-10
+							textarea#resume.form-control
+					.form-group
+						label.col-sm-2.control-label(for='authentication') 认证信息:
+						.col-sm-10
+							.radio
+								label
+									input#authentication(type='radio', name='authentication')
+									|  显示
+								label
+									input#authentication(type='radio', name='authentication')
+									|  不显示
+					.form-group
+						label.col-sm-2.control-label(for='telephone') 手机号码:
+						.col-sm-10
+							input#telephone.form-control(type='text', placeholder='')
+					.form-group
+						.col-sm-10.col-sm-offset-2
+							a.btn.btn-primary.btn-lg.btn-block(href="favor.html") 完成
+					
