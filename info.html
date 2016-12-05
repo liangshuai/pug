@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Title</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-theme.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>	<a class="navbar-brand" href="#"><img src="../images/logo.png"/></a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">首页</a></li>
+            <li><a href="#">论文</a></li>
+            <li><a href="#">问答</a></li>
+            <li><a href="#">关于我们</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">中文<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">中文</a></li>
+                <li><a href="#">English</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><img src="./images/search.png"/></li>
+            <li class="active"><img src="./images/notification.png"/></li>
+            <li>
+              <button class="btn default" href="#">我要提问</button>
+            </li>
+            <li>
+              <button class="btn default" href="#">发表文章</button>
+            </li>
+            <li class="user"><a href="#" data-toggle="modal" data-target="#LoginModal"><img src="./images/avatar1.png"/><span>奇异博士</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container content bg-white">
+      <div class="inner detail-info">
+        <div>
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label class="col-sm-2 control-label">账号昵称:</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="nickname" type="email" placeholder="账号昵称">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="city">所在城市:</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="city" type="text" placeholder="所在城市">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="city">性  别:</label>
+              <div class="col-sm-10">
+                <div class="radio">
+                  <label>
+                    <input id="gender" type="radio" name="gender"> 男
+                  </label>
+                  <label>
+                    <input id="gender" type="radio" name="gender"> 女
+                  </label>
+                  <label>
+                    <input id="gender" type="radio" name="gender"> 保密
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="job">职 业:</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="job" type="text" placeholder="职业">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="personpage">个人主页:</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="personpage" type="text" placeholder="http://">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="resume">关于自己:</label>
+              <div class="col-sm-10">
+                <textarea class="form-control" id="resume"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="authentication">认证信息:</label>
+              <div class="col-sm-10">
+                <div class="radio">
+                  <label>
+                    <input id="authentication" type="radio" name="authentication"> 显示
+                  </label>
+                  <label>
+                    <input id="authentication" type="radio" name="authentication"> 不显示
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="telephone">手机号码:</label>
+              <div class="col-sm-10">
+                <input class="form-control" id="telephone" type="text" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-sm-10 col-sm-offset-2"><a class="btn btn-primary btn-lg btn-block" href="favor.html">完成</a></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/dropdown.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+!function(i){i(function(){i(".carousel").css("visibility","visible"),i(document).trigger("enhance")})}(jQuery);

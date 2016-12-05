@@ -1,0 +1,67 @@
+.nav.navbar-right {
+  line-height: 50px;
+}
+.nav.navbar-right img {
+  width: 28px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.nav.navbar-right li {
+  margin-right: 12px;
+}
+.logo img {
+  width: 32px;
+  padding: 8px;
+}
+.navbar .right {
+  line-height: 44px;
+}
+.navbar .right input {
+  background-color: #eaeaea;
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 200px;
+  height: 30px;
+  font-size: 12px;
+  border-radius: 2px;
+  margin-right: 20px;
+  padding-left: 8px;
+  background-image: url('../images/search.png');
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+.navbar .right input:focus {
+  outline: none;
+}
+.navbar .right .btn {
+  margin: 6px;
+}
+.navbar .right .login {
+  margin-left: 20px;
+  display: inline-block;
+  border-left: 1px solid #ecf0f1;
+  line-height: 30px;
+}
+.navbar .right .login::before {
+  content: '';
+  background: url('../images/user.png') no-repeat;
+  background-size: 100%;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  line-height: 48px;
+  vertical-align: text-top;
+  margin-left: 12px;
+  margin-right: 8px;
+}
+.navbar .language::after {
+  content: '';
+  background: url('../images/dropdown.png') no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  line-height: 48px;
+  vertical-align: text-top;
+  margin-left: 6px;
+}

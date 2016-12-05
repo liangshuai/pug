@@ -1,0 +1,18 @@
+.bottom .form-control {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #ecf1f4;
+  height: 42px;
+  font-size: 16px;
+}
+.bottom .form-control:focus {
+  outline: none;
+  border-bottom-color: #10c1ff;
+}
+.form-control {
+  border-radius: 0;
+}
+.form-group.action {
+  margin-top: 36px;
+}
